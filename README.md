@@ -11,7 +11,7 @@ For reporting error $`q`$ and at most $`J`$ known measurement settings, this pro
 =\Theta\!\left(q\left[1+\ln\min\{J,1/q\}\right]\right).
 ```
 
-Here $`\Gamma_J^*`$ is the largest globally optimized one-use coherent-information activation threshold among the allowed menus. By contrast, the actual unassisted positive-quantum-capacity threshold is $`\Theta(q)`$ for every finite menu. Dense finite menus therefore produce an unbounded logarithmic separation between these two thresholds under the same supplied channel.
+Here $`\Gamma_J^*`$ is the largest globally optimized one-use coherent-information activation threshold among the allowed menus, measured in intact-transmission odds $`x=\delta/(1-\delta)`$. By contrast, the actual unassisted positive-quantum-capacity threshold is $`\Theta(q)`$ for every finite menu. Dense finite menus therefore produce an unbounded logarithmic separation between these two thresholds under the same supplied channel.
 
 **[Read the scientific account](science/README.md)** · [Exact model and claims](science/model.md) · [Joint setting/noise theorem](science/setting_frontier.md) · [Reproduce the finite checks](verification/README.md)
 
@@ -26,6 +26,10 @@ The channel model and all-record repetition mechanism are inherited from [Measur
 
 The capacity claim guarantees a positive asymptotic rate. The explicit lower bound can be very small, and no efficient outer decoder or laboratory-runtime advantage is established. Reliable branch/axis labels, inaccessible measured systems, independent errors, and encoding before the random measurement choices are essential. [Full scope](science/model.md) · [Interpretation](science/interpretation.md).
 
+## Learning route
+
+Use [Preskill, *Quantum Shannon Theory*, v5 (2025)](https://arxiv.org/abs/1604.07450v5) through the [source-to-project bridge](learning/PRESKILL_BRIDGE.md), including a worked noisy-record example. The [30 milestones](learning/MILESTONES.md) lead from 12 background stops to 18 stops following the proofs, physical consequence and resource limits. [Learning overview](learning/README.md).
+
 ## Reproduce
 
 ```bash
@@ -38,4 +42,4 @@ The finite suite checks selected matrices, entropy inequalities, quadratures and
 
 ## Purpose and contact
 
-This repository serves as a record of the work and a guide for the author's self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

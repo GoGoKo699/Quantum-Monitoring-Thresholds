@@ -59,14 +59,8 @@ It does not give the uniform multiplicative lower bound $`C(\rho,q)/S(\rho)\gtrs
 
 [Hirche and Reeb, *Bounds on Information Combining With Quantum Side Information*](https://arxiv.org/abs/1706.09752v2), IEEE Transactions on Information Theory **64**, 4739–4757 (2018), give quantum information-combining inequalities for binary classical–quantum variables. Their XOR setting with independent uniform classical inputs is different from the arbitrary input spectrum and angular averaging in the present entropy ratio. We do not claim a general quantum Mrs. Gerber lemma. General conditional contraction theory is also developed by [Hirche, George, Nuradha, and Wilde](https://arxiv.org/abs/2608.27171v1); an evaluation of the particular singular setting/error frontier remains necessary to obtain the theorem here.
 
-## Background texts
+## Educational anchor
 
-The following are three independently useful routes into the prerequisites. Links identify exact published editions or an exact arXiv revision; source manuscripts are linked rather than redistributed.
+The learning route uses one source: [John Preskill, *Quantum Shannon Theory*, arXiv:1604.07450v5, 8 July 2025](https://arxiv.org/abs/1604.07450v5). The [source-to-project bridge](../learning/PRESKILL_BRIDGE.md) gives exact sections, notation and a worked channel example; the [30 milestones](../learning/MILESTONES.md) connect the prerequisites to the proofs. The source is linked rather than redistributed.
 
-| Text and version | Relevant background |
-|---|---|
-| [John Watrous, *The Theory of Quantum Information*, Cambridge University Press, 2018](https://cs.uwaterloo.ca/~watrous/TQI/) | Channels and instruments; state and channel distance; entropy; entanglement; quantum channel capacity, especially Chapters 2, 3, 5, 6, and 8 |
-| [John Preskill, *Quantum Shannon Theory*, arXiv:1604.07450v5, 8 July 2025](https://arxiv.org/abs/1604.07450v5) | Entropy, entanglement, measurements, coherent information, decoupling, and coding; the version pin avoids silently using an older chapter |
-| [Mark M. Wilde, *Quantum Information Theory*, second edition, Cambridge University Press, 2017](https://doi.org/10.1017/9781316809976) | Conditional entropy and coherent information, data processing, channel coding, and degradability; this citation is to the published second edition, not a later evolving author draft |
-
-Machine-readable metadata, source versions, and the role of each reference are recorded in [bibliography.json](bibliography.json). The comparisons above delimit the scientific claims; they do not assert an exhaustive literature classification.
+Machine-readable metadata, source versions, and the role of each research reference are recorded in [bibliography.json](bibliography.json). The comparisons above delimit the scientific claims; they do not assert an exhaustive literature classification.
