@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this repository and identify the exact commit used."
+title: "Quantum Monitoring Thresholds"
+type: software
+authors:
+  - family-names: Lin
+    given-names: Ruge
+repository-code: "https://github.com/GoGoKo699/Quantum-Monitoring-Thresholds"
+url: "https://github.com/GoGoKo699/Quantum-Monitoring-Thresholds"
+license: MIT
+abstract: "Joint measurement-setting and detector-noise laws for the separation between optimized one-use coherent information and positive quantum-capacity activation under destructive monitoring."
