@@ -7,3 +7,5 @@ Scientific proof route: science/haar_entropy.md proves the all-spectrum isotropi
 references/RELATED_WORK.md and references/bibliography.json own attribution. The incomplete-erasure channel, conditional-reference formula, measurement noise content, compatibility framework and repetition coding have established antecedents. The new contribution is the joint small-noise/growing-menu activation-threshold law and its comparison with the uniform actual capacity scale.
 
 verification/README.md defines meaningful finite checks. Numerical minima do not prove exact Haar entropy formulas, capacity, efficiency or novelty. The public account contains the scientific result rather than private development history or personal coaching.
+
+Learning route: learning/README.md introduces the single chosen educational source, Preskill, Quantum Shannon Theory, arXiv:1604.07450v5 (2025). learning/PRESKILL_BRIDGE.md maps its exact sections and notation to this channel; learning/MILESTONES.md gives exactly 30 prerequisite-to-project milestones. The scientific proofs remain authoritative in science/.

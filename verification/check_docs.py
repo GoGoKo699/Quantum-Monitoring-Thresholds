@@ -68,6 +68,28 @@ def main():
     for name in required:
         if not (ROOT/name).is_file():
             failures.append(f'missing scientific route: {name}')
+    milestone_file = ROOT/'learning/MILESTONES.md'
+    milestone_count = 0
+    if milestone_file.is_file():
+        milestone_text = milestone_file.read_text()
+        sections = re.split(r'^### M(\d{2}) — ', milestone_text, flags=re.M)
+        ids = sections[1::2]
+        milestone_count = len(ids)
+        if ids != [f'{i:02d}' for i in range(1, 31)]:
+            failures.append('learning: expected exactly M01–M30 in order')
+        fields = ['Central question', 'Understanding target', 'Dependencies and story role',
+                  'Conceptual connection', 'Source pointers']
+        for ident, body in zip(ids, sections[2::2]):
+            for field in fields:
+                if f'**{field}:**' not in body:
+                    failures.append(f'M{ident}: missing {field}')
+            dependency_text = re.search(r'\*\*Dependencies and story role:\*\* (.+)', body)
+            if dependency_text:
+                for predecessor in re.findall(r'\bM(\d{2})\b', dependency_text.group(1)):
+                    if int(predecessor) >= int(ident):
+                        failures.append(f'M{ident}: non-prior dependency M{predecessor}')
+    else:
+        failures.append('missing learning/MILESTONES.md')
     bib = ROOT/'references/bibliography.json'
     if bib.is_file():
         try:
@@ -76,6 +98,7 @@ def main():
             failures.append(f'bibliography JSON: {e}')
     print(json.dumps({'status': 'fail' if failures else 'pass', 'pages': len(pages),
                       'local_links': links, 'display_math_blocks': math,
+                      'milestones': milestone_count,
                       'scope': 'Static source/navigation only; no hosted rendering or theorem certification.',
                       'failures': failures}, indent=2))
     return 1 if failures else 0
