@@ -1,0 +1,9 @@
+# Quantum Monitoring Thresholds
+
+Read README.md for the question and central result. science/model.md owns the supplied channel, charged resources and distinction between optimized one-use coherent information and actual positive quantum capacity.
+
+Scientific proof route: science/haar_entropy.md proves the all-spectrum isotropic entropy lower bound; science/setting_frontier.md proves the joint setting-count/report-error law and finite-menu construction; science/shareability.md gives the exact arbitrary-POVM broadcast criterion and all-code bounds; science/coding.md reconstructs the inherited all-record repetition mechanism and explicit sufficient block length. science/interpretation.md states the physical consequence and remaining rate/decoder limitations.
+
+references/RELATED_WORK.md and references/bibliography.json own attribution. The incomplete-erasure channel, conditional-reference formula, measurement noise content, compatibility framework and repetition coding have established antecedents. The new contribution is the joint small-noise/growing-menu activation-threshold law and its comparison with the uniform actual capacity scale.
+
+verification/README.md defines meaningful finite checks. Numerical minima do not prove exact Haar entropy formulas, capacity, efficiency or novelty. The public account contains the scientific result rather than private development history or personal coaching.
